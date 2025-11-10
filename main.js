@@ -151,3 +151,53 @@
 //   return sum;
 // }
 // console.log(numssum(4533));
+
+// 1-masala (leetcode)
+// https://leetcode.com/problems/counting-bits/
+
+// function countBits(n) {
+//   let res = [];
+//   for (let i = 0; i <= n; i++) {
+//     let res1 = i.toString(2);
+//     let count = 0;
+//     for (let j = 0; j < res1.length; j++) {
+//       if (res1[j] === '1') {
+//         count++;
+//       }
+//     }
+//     res.push(count);
+//   }
+//   return res;
+// }
+// console.log(countBits(5));
+
+// 2-masala (leetcode)
+// https://leetcode.com/problems/to-lower-case/
+
+//  function toLowerCase (s) {
+//    return s.toLowerCase()
+// }
+// console.log(toLowerCase("HeLlo"));
+
+// 3-masala
+// https://leetcode.com/problems/self-dividing-numbers/ 
+
+// function selfDividingNumbers(left, right) {
+//   let result = [];
+//   let count = left;
+//   for (let i = left; i <= right; i++) {
+//     let num = count++;
+//     let str = num.toString();
+//     let togri = true;
+//     for (let j = 0; j < str.length; j++) {
+//       let digit = +str[j];
+//       if (digit === 0 || num % digit !== 0) {
+//         togri = false;
+//         break;
+//       }
+//     }
+//     if (togri) result.push(num);
+//   }
+//   return result;
+// }
+// console.log(selfDividingNumbers(22, 27));
