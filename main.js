@@ -1,0 +1,153 @@
+// 1-masala
+
+// function num (arr) {
+// let maxCount = 0
+// let maxElement = 0
+// for (let i = 0; i < arr.length; i++) {
+// let count = 0
+// for (let m = 0; m < arr.length; m++) {
+// if (arr[i] === arr[m]) {
+//     count++
+// }
+// }
+// if (count > maxCount) {
+//     maxCount = count
+//     maxElement = arr[i]
+// }
+// }
+// return {element : maxElement , count : maxCount}
+// }
+// console.log(num ([18, 3, 24, 23, 18, 4, 18, 18, 3, 18, 8 ]));
+
+// 2-masala
+
+// function countEvens (arr) {
+//     let count = 0
+// for (let i = 0; i < arr.length; i++) {
+// if (arr[i] % 2 === 0) {
+//     count++
+// }
+// }
+// return count
+// }
+// console.log(countEvens ([18, 3, 24, 23, 18, 4, 18, 18, 3, 18, 8 ]));
+
+// 3-masala
+
+// function num (arr) {
+// let result = []
+// for (let i = 0; i < arr.length; i++) {
+// let count = 0
+// for (let m = 0; m < arr.length; m++) {
+// if (arr[i] === arr[m]) {
+//     count++
+// }
+// }
+// if (count === 1) {
+//     result.push(arr[i])
+// }
+// }
+// return result
+// }
+// console.log(num ([1, 2, 4, 4, 3, 3, 1, 7, 3 ]));
+
+// 4-masala
+
+// function reversing (str) {
+// return str.split(" ").reverse().join(" ")
+// }
+// console.log(reversing ("i am learning high level programming language"));
+
+// 5-masala
+
+// function num (str) {
+// for (let i = 0; i < str.length; i++) {
+// if ( str[i] < "0" || str[i] > "9" ) {
+//     return false
+// }
+// }
+// return true
+// }
+// console.log(num ("13128"));
+
+// 6-masala
+
+// function finding (arr) {
+// let result = []
+// for (let i = 0; i < arr.length; i++) {
+// let count = 0
+// for (let m = 0; m < arr.length; m++) {
+// if (arr[i][m] === "e" || arr[i][m] === "E") {
+//     count++
+// }
+// }
+// if (count >= 2 ) {
+//     result.push(arr[i])
+// }
+// }
+// return result
+// }
+// console.log(finding(["elephant", "apple", "cheese", "banana", "tree"]));
+
+// 7-masala
+
+// function word(arr) {
+//   let result = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     let increasing = true;
+//     for (let m = 0; m < arr[i].length - 1; m++) {
+//       if (arr[i][m] >= arr[i][m + 1]) {
+//         increasing = false;
+//         break;
+//       }
+//     }
+//     if (increasing) {
+//       result.push(arr[i]);
+//     }
+//   }
+//   return result;
+// }
+// console.log(word(["abs", "dog", "xyz", "apple"]));
+
+// 8-masala
+
+// function func(num) {
+//   if (Array.isArray(num)) {
+//     let result = "";
+//     for (let i = 0; i < num.length; i++) {
+//       result += num[i];
+//     }
+//     return Number(result);
+//   } else if (typeof num === "number") {
+//     let arr = [];
+//     let str = num.toString();
+//     for (let i = 0; i < str.length; i++) {
+//       arr.push(Number(str[i]));
+//     }
+//     return arr;
+//   }
+// }
+// console.log(func([2, 3, 5]));
+
+// 9-masala
+
+// function measuredepth (arr) {
+// if (Array.isArray(arr)) {
+//     return 1 + measuredepth(arr[0])
+// } else {
+//     return 0
+// }
+// }
+// console.log(measuredepth([[[[[[[[[[]]]]]]]]]]));
+
+// 10-masala
+
+// function numssum(num) {
+//   let sum = 0;
+//   num = num.toString();
+//   for (let i = 0; i < num.length; i++) {
+//     sum += Number(num[i]);
+//   }
+//   return sum;
+// }
+// console.log(numssum(4533));
