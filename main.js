@@ -180,7 +180,7 @@
 // console.log(toLowerCase("HeLlo"));
 
 // 3-masala
-// https://leetcode.com/problems/self-dividing-numbers/ 
+// https://leetcode.com/problems/self-dividing-numbers/
 
 // function selfDividingNumbers(left, right) {
 //   let result = [];
@@ -201,3 +201,35 @@
 //   return result;
 // }
 // console.log(selfDividingNumbers(22, 27));
+
+// 4-masala (leetcode)
+// https://leetcode.com/problems/height-checker/
+
+// function heightChecker (heights) {
+//     let expected = [... heights]
+//     let wrong = 0
+//     for (let i = 0; i < heights.length && expected.sort((a, b) => a - b) ; i++) {
+// if (heights[i] !== expected[i]) {
+//     wrong++
+// }
+//     }
+//     return wrong
+// };
+// console.log(heightChecker([1,1,4,2,1,3]));
+
+// 5-masala (leetcode)
+// https://leetcode.com/problems/duplicate-zeros/
+
+// function duplicateZeros(arr) {
+//   let n = arr.length;
+//   for (let i = 0; i < n; i++) {
+//     if (arr[i] === 0) {
+//       for (let j = n - 1; j > i; j--) {
+//         arr[j] = arr[j - 1];
+//       }
+//       i++;
+//     }
+//   }
+//   return arr;
+// }
+// console.log(duplicateZeros([1,0,2,3,0,4,5,0]));
